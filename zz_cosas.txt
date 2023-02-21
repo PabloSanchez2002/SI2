@@ -1,3 +1,15 @@
 asadmin start-domain domain1
 export J2EE_HOME=$HOME/glassfish4/glassfish
+ant replegar limpiar-todo unsetup-db todo
+https://10.6.3.1:4848/
 http://10.6.3.1:8080/P1/testbd.jsp
+
+Cerrar todas las sesiones de la DB
+Asadmin, dbeaber...
+
+ant replagar
+ant regenerar-bd
+ant compilar
+ant empaquetar
+ent desplegar
+
