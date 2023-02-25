@@ -1,4 +1,4 @@
-package ssii2.visa.dao;
+package ssii2.visa;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -116,9 +116,10 @@ public class DBTester {
 
     /**
      * @param directConnection valor de conexión directa o indirecta
+     * @return 
      */
-    public void setDirectConnection(boolean directConnection) {
-        this.directConnection = directConnection;
+    public boolean setDirectConnection(boolean directConnection) {
+        return this.directConnection = directConnection;
     }
 
 
