@@ -7,10 +7,12 @@
 
 package ssii2.visa;
 
+
 /**
  *
  * @author jaime
  */
+
 public class PagoBean {
     
 	private String idTransaccion; 

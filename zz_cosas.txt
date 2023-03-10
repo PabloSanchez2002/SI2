@@ -4,12 +4,21 @@ sudo service postgresql restart
 ant replegar limpiar-todo unsetup-db todo
 drop database visa;
 
+http://10.6.3.1:8080/P1-ejb-cliente/testbd.jsp;jsessionid=69bebdb1246f9ba54812a67e1226
+
 select pg_terminate_backend(procpid)
 from pg_stat_activity
 where datname = 'visa';
 
 https://10.6.3.1:4848/
 http://10.6.3.1:8080/P1/testbd.jsp
+
+
+1111 2222 3333 4444
+Jose Garcia
+11/09
+11/24
+123
 
 sudo su postgres
 psql
@@ -22,4 +31,13 @@ ant regenerar-bd
 ant compilar
 ant empaquetar
 ent desplegar
+
+
+
+ant compilar-servidor
+ant empaquetar-servidor
+ant compilar-cliente
+ant empaquetar-cliente
+ant empaquetar-aplicacion
+ant desplegar
 
