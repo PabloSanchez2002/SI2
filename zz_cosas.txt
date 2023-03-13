@@ -26,18 +26,9 @@ psql
 ant generar-stubs
 wsimport -d build/client/WEB-INF/classes -p ssii2.visa http://10.6.3.1:8080/P1-ws-ws/VisaDAOWSService\?wsdl
 
-ant replagar
-ant regenerar-bd
-ant compilar
-ant empaquetar
-ent desplegar
 
+/glassfish/bin/appclient –targetserver 10.6.3.1 -client dist/clientjms/P1-jms-clientjms.jar idAutorizacion
 
+/opt/glassfish-4.1.2/glassfish/bin/appclient –targetserver 10.6.3.1 -client dist/clientjms/P1-jms-clientjms.jar -browse
 
-ant compilar-servidor
-ant empaquetar-servidor
-ant compilar-cliente
-ant empaquetar-cliente
-ant empaquetar-aplicacion
-ant desplegar
-
+SI2P1B_2323_03.zip
